@@ -1,0 +1,59 @@
+MUL_drop0.3
+         Scenario F1-Score  AUPRC  Samples
+    Complete_Data   0.5307 0.5770     2482
+     Missing_Text   0.4337 0.4023     2482
+Missing_Numerical   0.5071 0.5316     2482
+
+MUL_drop0.3微调
+         Scenario F1-Score  AUPRC  Samples
+    Complete_Data   0.5474 0.5729     2482
+     Missing_Text   0.4543 0.4400     2482
+Missing_Numerical   0.5024 0.5277     2482
+
+MUL_drop0.7
+         Scenario F1-Score  AUPRC  Samples
+    Complete_Data   0.5666 0.5854     2482
+     Missing_Text   0.4479 0.4512     2482
+Missing_Numerical   0.5193 0.5336     2482
+
+drop0.7微调
+         Scenario F1-Score  AUPRC  Samples
+    Complete_Data   0.5710 0.5764     2482
+     Missing_Text   0.4468 0.4633     2482
+Missing_Numerical   0.5292 0.5325     2482
+
+drop0.7微调(MMGM修改MLPlayer)
+         Scenario F1-Score  AUPRC  Samples
+    Complete_Data   0.5631 0.5763     2482
+     Missing_Text   0.4368 0.4650     2482
+Missing_Numerical   0.5177 0.5367     2482
+
+miniTrans
+         Scenario F1-Score  AUPRC  Samples
+    Complete_Data   0.5600 0.5689     2482
+     Missing_Text   0.4432 0.4501     2482
+Missing_Numerical   0.5291 0.5326     2482
+
+--- Complete_Data 情景下各模型性能 ---
+             Model F1-Score  AUPRC
+LB_timeseries_only   0.4724 0.4571
+      LB_text_only   0.5091 0.5491
+LB_both_modalities   0.5291 0.5755
+                MS   0.5284 0.5755
+                MD   0.5000 0.5187
+
+--- Missing_Text 情景下各模型性能 ---
+             Model F1-Score  AUPRC
+LB_timeseries_only   0.4724 0.4571
+      LB_text_only   0.1962 0.1088
+LB_both_modalities   0.3515 0.3463
+                MS   0.2730 0.3189
+                MD   0.3819 0.3412
+
+--- Missing_Numerical 情景下各模型性能 ---
+             Model F1-Score  AUPRC
+LB_timeseries_only   0.0000 0.1088
+      LB_text_only   0.5091 0.5491
+LB_both_modalities   0.5159 0.5499
+                MS   0.5214 0.5659
+                MD   0.5028 0.5310
