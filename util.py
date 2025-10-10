@@ -294,7 +294,7 @@ def change_data_form(file_path,mode,debug=False):
                         }
             dataList.append(data_detail)
 
-    os.makedirs('Data',exist_ok=True)
+    os.makedirs(file_path, exist_ok=True)
     dataPath2 = os.path.join(file_path, mode + 'p2x_data.pkl')
 
     with open(dataPath2, 'wb') as f:
